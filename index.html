@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Random Password Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        Generate a <br />
+        <span>random password</span>
+      </h1>
+      <p class="subtitle">Never use an insecure password again.</p>
+      <button class="btn">
+        <i class="fa-solid fa-lock"></i>Generate passwords
+      </button>
+      <div class="passwords-container">
+        <p class="password"></p>
+        <p class="password"></p>
+        <p class="password"></p>
+        <p class="password"></p>
+      </div>
+      <p id="copiedTextAlert">Password copied!</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+html {
+  box-sizing: border-box;
+}
+body {
+  background-color: #1c1c1c;
+  margin: 0;
+  padding: 2em 1em;
+  font-family: "Karla", sans-serif;
+  font-size: 1.2rem;
+}
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 2em;
+  background-color: #1f2937;
+  color: #fff;
+}
+.container h1 {
+  font-size: 3rem;
+  line-height: 0.9;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.container h1 span {
+  color: #0ea5e9;
+}
+.container .subtitle {
+  color: #e0f2fe;
+}
+.container .btn {
+  padding: 1em 2.5em;
+  margin-top: 1.5em;
+  border-radius: 5px;
+  border: none;
+  background: #0ea5e9;
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+.container .btn i {
+  margin-right: 0.5em;
+}
+
+.container .passwords-container {
+  margin-top: 2em;
+  padding: 1em 0;
+  border-top: 1px solid #273549;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container .passwords-container .password {
+  background: #273549;
+  padding: 0.5em;
+  width: 45%;
+  border-radius: 5px;
+  text-align: center;
+  color: #0ea5e9;
+  min-height: 26px;
+  cursor: pointer;
+  pointer-events: none;
+}
+.container .passwords-container .password.clicked {
+  -webkit-box-shadow: 0px 0px 30px 8px rgba(0, 0, 0, 0.57);
+  box-shadow: 0px 0px 30px 8px rgba(0, 0, 0, 0.57);
+}
+.container .passwords-container .password.active {
+  pointer-events: auto;
+}
+.container .passwords-container .password.active:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 700px) {
+  .container .passwords-container .password {
+    width: 43%;
+  }
+}
+
+#copiedTextAlert {
+  display: none;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #0369a1;
+}
